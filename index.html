@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Welcome!</title>
+    <link rel="stylesheet" type="text/css" href="game.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="game.js">
+        </script>
+    <noscript>
+        Warning- JavaScript is Disabled.
+        For full functionality of this page, it is necessary to enable JavaScript.
+    </noscript>
+    
+    <body>
+        <div style="font-size: large;" id="title">
+            <h1>Help the bear escape the bees !</h1>
+            <p>Bear tries to avoid being stung by <input type="text" id="nbBees" value="1" size="3" > bees by running and jumping. The objective is to have as less stings as possible!</p>
+            <p>You can adjust bees' speed <input type="text" id="speedBees" value="50" size="3"> px/ms
+                <br> and the refresh period <input type="text" id="periodTimer" value="10" size="3"> ms </p>
+            <p>You can adjust the speed of the bear <input type="text" id="dBear" value="100" onchange="setSpeed()">ms</p>
+            <h2>Use left, right, up, down keys to move the bear</h2>
+            <h3>Press any key to start the timer</h3>
+            <button type="button" id="addB" onclick="addBee()">Add 1 bee </button>
+        </div>
+        <div style="color: white; font-size:large;" id="scores">
+            <table>
+                <tr>
+                    <td>
+                        <p>Stings: [<span id="hits">0</span>]</p>
+                    </td>
+                    <td>
+                        <p>Best duration: [<span id="duration">0</span>]</p>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="board">
+            <img src="https://raw.githubusercontent.com/hbatatia/lab02-dom-resources/main/images/bear.gif" id="bear" alt="bear">
+        </div>
+
+        <body onload="start();"> 
+    </body>
+
+</html>

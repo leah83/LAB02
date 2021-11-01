@@ -1,0 +1,51 @@
+#bear {
+    position: absolute;
+    left: 100px;
+    /*top: 240px;*/
+    width: 100px;
+    height: 160px
+}
+#board {
+    position: absolute;
+    height: 600px;
+    width: 1200px;
+    background-color:#ec9548;
+    align-content: center;
+    align-self: center;
+}
+
+#title {
+    background-color:rgb(255, 238, 0);
+    align-content: center;
+    align-self: center;
+}
+
+#scores {
+    background-color:#755139/*black*/;
+    align-content: center;
+    align-self: center;
+}
+
+.location {
+    color: peachpuff;
+}
+
+#hits {
+    color: red;
+}
+
+#duration {
+    color: orange;
+}
+#addB{
+    background-color: azure;
+    border:2px solid black;
+    color: black;
+    font-size: 20px;
+    transition-duration: 0.4s;
+}
+#addB:hover{
+    background-color: brown;
+    border:2px solid brown;
+    color: wheat;
+}
