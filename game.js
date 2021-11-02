@@ -43,7 +43,6 @@ function Bear() {
 }
 function setSpeed(){
     bear.dBear=document.getElementById("dBear").value;
-    console.log(bear.dBear);
 }
 class Bee {
     constructor(beeNumber) {
@@ -176,12 +175,6 @@ function makeBees(){
         bee.display(); //display the bee
         bees.push(bee); //add the bee object to the bees array
         i++;
-    }
-    if (nbBees<bees.length){
-        var removeB=bees.length-nbBees;
-        for(var j=0;j<=removeB;j++){
-            bees.pop();
-        }
     }
 }
 function moveBees(){
